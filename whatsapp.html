@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <style>
+          body{
+              margin: 0;
+              padding: 0;
+              background: rgb(177, 177, 108);
+          }
+          div{
+              width: 200px;
+              height: 200px;
+              border-radius: 90px;
+              background: #3ac371;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+          }
+          .white{
+              width: 220px;
+              height: 220px;
+              border-radius: 95px;
+              background-color: white;
+              box-shadow: 2px 2px 3px 2px rgba(0 0 0 0.3);
+          }
+          .white::before{
+              content: '';
+              top: 160px;
+              left: -15px;
+              border-width: 50px;
+              border-style: solid;
+              border-color: transparent white transparent transparent;
+              position: absolute;
+              transform: rotate(-50deg) rotateX(-50deg);
+          }
+          .white::after{
+              content: '';
+              top: 160px;
+              left: -50px;
+              border-width: 40px;
+              border-style: solid;
+              border-color: transparent #3ac371 transparent transparent;
+              position: absolute;
+              transform: rotate(-51deg) rotateX(-50deg);
+          }
+          .fa{
+              left: 61px;
+              top: 59px;
+              position: absolute;
+              font-size: 85px;
+              transform: rotate(90deg);
+              color: white;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="white">
+            <div> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+        </div>
+    </body>
+</html>
